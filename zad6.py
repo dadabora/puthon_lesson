@@ -40,7 +40,7 @@ while a_s != len_list_data:
     list_kol.append(korteg2['Количество'])
     list_izm.append(korteg2['Ед.'])
     a_s += 1
-print('Название :', set(list_name))
-print('Цена :', set(list_cost))
-print('Количество :', set(list_kol))
+print('Название :', (list_name))
+print('Цена :', (list_cost))
+print('Количество :', (list_kol))
 print('Ед. :', set(list_izm))
