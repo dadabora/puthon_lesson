@@ -1,12 +1,15 @@
-list_tips = [1234, 'Тарталетки', True, 1.234,
-             [1, 2, 3, 4, 5], (1, 2, 3, 4, 5),
-             None, {'a':1, 's':2, "byba":"tyty"},
-             {'k', '!', 'r', 'b', 'a', 'd'}, ]
-long = len(list_tips)
-print(long)
-print(list_tips[1])
-a = 0
-while a != long:
+def s_calc():
+    try:
+        r_val = float(input("Укажите делимое: "))
+        h_val = float(input("Укажите делитель: "))
+    except ValueError:
+        s_full = 'Нужно вводить цифры'
+        return s_full
+    if h_val == 0:
+        s_full = 'На ноль не делиться'
+        return s_full
+    s_full = r_val / h_val
 
-    print(a+1, 'Класс (', list_tips[a], ') =', type(list_tips[a]))
-    a += 1
+    return s_full
+
+print(s_calc())

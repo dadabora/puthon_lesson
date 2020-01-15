@@ -1,9 +1,23 @@
-imba = input('введите слова')
-list_imba = imba.split()
-print(list_imba)
-namber = len(list_imba)
-a = 0
-while a != namber:
-    slovo = list_imba[a]
-    a += 1
-    print(a, slovo[:10])
+def my_func():
+    x = int(input('Введите х: '))
+    y = int(input('Введите y: '))
+    return x**y
+print(my_func())
+
+def my_func1():
+    x = int(input('Введите х: '))
+    y = int(input('Введите y: '))
+    a = 0
+    xoy = 1
+    b = abs(y)
+    if y == 0:
+        return xoy
+    while a != b:
+        a += 1
+        xoy = xoy*x
+    if y < 0:
+            xoy = 1/xoy
+
+
+    return xoy
+print(my_func1())

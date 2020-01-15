@@ -1,23 +1,10 @@
-print('С использованием list')
-cez = ['Зима', 'Весна', 'Лето', 'Осень']
+def first_func(var_1, var_2, var_3):
+    arg1 = [var_1, var_2, var_3]
+    max1 = int(max(arg1))
+    arg1.remove(max1)
+    max2 = int(max(arg1))
 
-mes = int(input('Введите месяц цифрой от 1 до 12 :'))
-if mes <= 2 or mes == 12:
-    print(cez[0])
-elif 3 >= mes <= 5:
-    print(cez[1])
-elif 6 >= mes <= 8:
-    print(cez[2])
-elif 9 >= mes <= 11:
-    print(cez[3])
-else:
-    print('Вы ошиблись в номере месятца')
-print('Теперь с использованием dict')
-cez_dict = {1: 'Зима', 2: 'Зима', 3: 'Весна', 4: 'Весна',
-            5: 'Весна', 6: 'Лето', 7: 'Лето', 8: 'Лето', 9: 'Осень',
-            10: 'Осень', 11: 'Осень', 12: 'Зима'}
-namber = int(input('Введите месяц цифрой от 1 до 12 :'))
-if 1 <= namber <= 12:
-    print(cez_dict.get(namber))
-else:
-    print('Вы ошиблись в номере месятца')
+    return max1 + max2
+
+
+print(first_func(10, 20, 30))
